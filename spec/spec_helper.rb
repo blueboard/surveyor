@@ -76,21 +76,16 @@ RSpec.configure do |config|
   puts "RSpec retry count is #{config.default_retry_count}"
 
   ## Database Cleaner
-  config.before :suite do
-    DatabaseCleaner.clean_with :truncation
+  config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
   end
 
-  config.before do
-    if example.metadata[:clean_with_truncation] || example.metadata[:js]
-      DatabaseCleaner.strategy = :truncation
-    else
-      DatabaseCleaner.strategy = :transaction
-    end
+  config.before(:each) do
     DatabaseCleaner.start
   end
 
-  config.after do
+  config.after(:each) do
     DatabaseCleaner.clean
   end
 end

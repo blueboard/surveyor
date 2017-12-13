@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
-describe SurveyorHelper do
+describe SurveyorHelper, type: :helper do
   context "numbering" do
     it "should return the question text with number, except for labels, dependencies, images, and grouped questions" do
       q1 = FactoryGirl.create(:question)

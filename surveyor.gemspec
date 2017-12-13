@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'rails', '~> 4.2'
-  s.add_dependency 'haml', '~> 4.0'
+  s.add_dependency 'rails', '~> 5.1.1'
+  s.add_dependency 'haml', '~> 5.0.1'
   s.add_dependency 'sass'
   s.add_dependency 'formtastic', '~> 3.1.4'
   s.add_dependency 'uuidtools', '~> 2.1'
@@ -28,14 +28,13 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'yard', '~> 0.8.7'
   s.add_development_dependency 'rake', '~> 11.1.2'
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'bundler', '~> 1.11.2'
+  s.add_development_dependency 'bundler', '~> 1.14.6'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'capybara', '~> 2.2.1'
   s.add_development_dependency 'launchy', '~> 2.4.2'
-  s.add_development_dependency 'poltergeist', '~>1.5.0'
+  s.add_development_dependency 'poltergeist', '~> 1.5.0'
   s.add_development_dependency 'json_spec', '~> 1.1.1'
   s.add_development_dependency 'factory_girl', '~> 4.4.0'
   s.add_development_dependency 'database_cleaner', '~> 1.2.0'
   s.add_development_dependency 'rspec-retry'
 end
-
