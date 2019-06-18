@@ -1,6 +1,21 @@
 History for Surveyor
 ====================
 
+1.6.1
+-----
+
+### Features
+
+* Added scope for getting only latest version of a survey
+
+
+1.6.0
+-----
+
+### Fixes
+
+* Upgraded for Rails 5 (by Yuriy)
+
 1.5.0
 -----
 
