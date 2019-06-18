@@ -22,6 +22,9 @@ module Surveyor
         # Derived attributes
         before_save :generate_access_code
         before_save :increment_version
+
+        # Scopes
+        scope :latest_versions, -> { order('access_code asc, survey_version desc').select('distinct on ("access_code") *') }
       end
 
       module ClassMethods
