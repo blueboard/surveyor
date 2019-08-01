@@ -1,6 +1,13 @@
 History for Surveyor
 ====================
 
+1.6.2
+-----
+
+### Fixes
+
+* Fix response to_formatted_s method to work properly with dates and time
+
 1.6.1
 -----
 
