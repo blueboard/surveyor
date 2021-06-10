@@ -4,6 +4,7 @@ class CreateResponseSets < ActiveRecord::Migration
     create_table :response_sets do |t|
       # Context
       t.integer :user_id
+      t.integer :user_account_id # added to migrate from user to account ref (will be removed)
       t.integer :survey_id
 
       # Content

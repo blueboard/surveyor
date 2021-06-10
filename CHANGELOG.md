@@ -1,6 +1,13 @@
 History for Surveyor
 ====================
 
+1.6.3.1
+-----
+### Features
+
+* Extend ResponseSet model with `user_account_id`
+  to store reference to extra model for smooth migration from one to other
+
 1.6.3
 -----
 
