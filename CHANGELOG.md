@@ -1,6 +1,13 @@
 History for Surveyor
 ====================
 
+1.6.4
+-----
+
+### Fixes
+
+* Fixed styles issues for upgraded sass-rails in main app
+
 1.6.3
 -----
 
