@@ -1,6 +1,13 @@
 History for Surveyor
 ====================
 
+1.7.0
+-----
+
+### Fixes
+
+* Upgraded to Rails 7
+
 1.6.4
 -----
 
