@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'rails', '~> 5.2'
+  s.add_dependency 'rails', '>= 6.0'
+  s.add_dependency 'bootsnap'
   s.add_dependency 'haml'
   s.add_dependency 'sass'
   s.add_dependency 'formtastic', '~> 3.1.4'
@@ -26,9 +27,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'rabl', '~> 0.12'
 
   s.add_development_dependency 'yard', '~> 0.8.7'
-  s.add_development_dependency 'rake', '~> 11.1.2'
+  s.add_development_dependency 'rake', '~> 13.0.6'
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'bundler', '~> 1.11.2'
+  s.add_development_dependency 'bundler', '~> 2.4.14'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
   s.add_development_dependency 'capybara', '~> 2.2.1'
   s.add_development_dependency 'launchy', '~> 2.4.2'
