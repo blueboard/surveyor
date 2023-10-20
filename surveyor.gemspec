@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '>= 6.0'
   s.add_dependency 'bootsnap'
   s.add_dependency 'haml'
-  s.add_dependency 'sass'
+  s.add_dependency 'dartsass'
   s.add_dependency 'formtastic', '~> 3.1.4'
   s.add_dependency 'uuidtools', '~> 2.1'
   s.add_dependency 'mustache', '~> 1.0.3'
