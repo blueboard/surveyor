@@ -1,6 +1,14 @@
 History for Surveyor
 ====================
 
+1.8.0
+-----
+
+### Fixes
+
+* Changes sass to dartsass
+
+
 1.7.0
 -----
 
